@@ -1,6 +1,9 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     background-color: #051D3B;
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,10 +21,12 @@ header {
 .barra_pesquisar {
     border-radius: 10px;
     border: none;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.16);
     color: white;
     width: 752px;
     padding-left: 20px;
+    margin-left: 0;
+    margin-right: 7.4vw;
 }
 
 .barra_pesquisar::placeholder {
@@ -45,7 +50,10 @@ main {
     vertical-align: middle;
 }
 
-.menu_navegaco_titulo {
+/* Se aplica também ao botões do formúlario de salvamento de projeto*/
+.menu_navegaco_titulo,
+.opcoes_titulo {
+    color: white;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 5px;
@@ -121,4 +129,65 @@ main {
 .opcoes_container {
     display: flex;
     flex-direction: column;
+}
+
+.opcoes_campo {
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.16);
+    color: white;
+    width: calc(272px - 20px);
+    height: 56px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.opcoes_campo-linguagem {
+    width: 272px;
+}
+
+.opcoes_campo-descricao {
+    padding-top: 10px;
+}
+
+.opcoes_titulo-personalizacao {
+    margin-top: 40px;
+}
+
+.opcoes_campo-linguagem option {
+    background: #051D3B;
+}
+
+.opcoes_campo::placeholder {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.opcoes_campo-cor {
+    border-radius: 10px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    width: 272px;
+    height: 56px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.botao_salvar_projeto {
+    width: 272px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    background: #5081FB;
+    color: #051D3B;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }

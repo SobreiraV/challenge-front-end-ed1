@@ -43,10 +43,24 @@ const unfold = (f, seed) => {
             </div>
             <input type="submit" value="Visualizar com o highlight" class="botao_highlight">
         </div>
-        <div class="opcoes_container">
-            <input type="text" placeholder="Nome do seu projeto" />
-            <textarea name="descricao" placeholder="Descrição do seu projeto"></textarea>
-        </div>
+        <form class="opcoes_container">
+            <label class="opcoes_titulo">Seu projeto</label>
+            <input type="text" placeholder="Nome do seu projeto" required class="opcoes_campo"/>
+            <textarea name="descricao" placeholder="Descrição do seu projeto" class="opcoes_campo opcoes_campo-descricao"></textarea>
+
+            <label class="opcoes_titulo opcoes_titulo-personalizacao">Personalização</label>
+            <select name="linguagem" list="assuntos" value="Selecione a linguagem" class="opcoes_campo opcoes_campo-linguagem" required>
+                <datalist id="assuntos">
+                    <option value="js" selected>JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="jv">Java</option>
+                    <option value="C#">C#</option>
+                </datalist>
+            </select>
+            <input type="color" name="cor_editor" required class="opcoes_campo-cor" value="#6BD1FF">
+            <input type="submit" value="Salvar projeto" class="botao_salvar_projeto">
+        </form>
     </main>
 </body>
 

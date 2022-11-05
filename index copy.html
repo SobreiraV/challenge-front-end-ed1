@@ -29,22 +29,8 @@
             </ul>
         </div>
         <div class="centro">
-            <div class="editor_container codigo-wrapper" id="editor_fundo">
-                <div class="editor_container-botoes"></div>
-                <code class="preview hljs" contenteditable="true" aria-label="Editor de código">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}
-</code>
-                <!-- Primeira versão do editor 
-                    <textarea name="editor" id="editor" class="editor_input" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+            <div class="editor_container" id="editor_fundo">
+                <textarea name="editor" id="editor" class="editor_input" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
@@ -54,39 +40,32 @@ const unfold = (f, seed) => {
     return res ? go(f, res[1], acc.concat([res[0]])) : acc
   }
   return go(f, seed, [])
-}"></textarea> -->
+}"></textarea>
             </div>
-            <button class="botao_highlight botao">Visualizar com o highlight</button>
+            <input type="submit" value="Visualizar com o highlight" class="botao_highlight">
         </div>
-
         <form class="opcoes_container">
             <label class="opcoes_titulo">Seu projeto</label>
             <input type="text" placeholder="Nome do seu projeto" required class="opcoes_campo" id="opcao_campo-nome"/>
             <textarea name="descricao" placeholder="Descrição do seu projeto" class="opcoes_campo opcoes_campo-descricao" id="opcao_campo-descricao"></textarea>
 
             <label class="opcoes_titulo opcoes_titulo-personalizacao">Personalização</label>
-            <select name="linguagem" class="opcoes_campo opcoes_campo-linguagem linguagem" id="linguagem" required>
-                    <option value="javascript" selected>JavaScript</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="java">Java</option>
-                    <option value="C#">C#</option>
-            <!-- <select name="linguagem" list="assuntos" class="opcoes_campo opcoes_campo-linguagem" id="opcao_campo-linguagem" required>
+            <select name="linguagem" list="assuntos" value="Selecione a linguagem" class="opcoes_campo opcoes_campo-linguagem" id="opcao_campo-linguagem" required>
                 <datalist id="assuntos">
                     <option value="js" selected>JavaScript</option>
                     <option value="html">HTML</option>
                     <option value="css">CSS</option>
                     <option value="jv">Java</option>
                     <option value="C#">C#</option>
-                </datalist> -->
+                </datalist>
             </select>
             <input type="color" name="cor_editor" required class="opcoes_campo-cor" id="opcoes_campo-cor" value="#6BD1FF">
             <input type="submit" value="Salvar projeto" id="botao_salvar_projeto" class="botao_salvar_projeto">
         </form>
     </main>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-    <script src="assets/js/hl.js"></script>
+    <script>hljs.highlightAll()</script>
 </body>
 
 </html>

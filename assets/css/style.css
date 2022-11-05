@@ -121,12 +121,47 @@ main {
     text-decoration: underline;
 }
 
+.menu_navegacao_item-editor-ativo:active, 
+.menu_navegacao_item-editor-off:active, 
+.menu_navegacao_item-comunidade-ativo:active,
+.menu_navegacao_item-comunidade-off:active {
+    transform: scale(0.9);
+}
+
 .editor_container {
     background: #6BD1FF;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     padding: 32px;
+    width: 688px;
 }
 
+.editor_container-botoes {
+    background: black;
+    display: block;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../img/botoes-mac.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.preview {
+    display: block;
+    flex: 1 1 0px;
+    min-height: 302px;
+    white-space: pre-wrap;
+    background: black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.preview:focus {
+    outline: none;
+}
+
+/* propriedades da primeira versão do editor
 .editor_input {
     background-image: url(../img/fundo-editor.png);
     background-size: cover;
@@ -137,7 +172,7 @@ main {
     height: calc(302px - 65px);
     padding: 50px 15px 15px 15px;
     width: calc(688px - 30px);
-}
+} */
 
 .editor_input::placeholder {
     color: white;
@@ -151,9 +186,18 @@ main {
     border: none;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
     height: 56px;
     margin-top: 30px;
     width: 100%;
+}
+
+.botao_highlight:hover {
+    background: rgba(80, 129, 251, 1);
+}
+
+.botao_highlight:active {
+    transform: scale(0.9);
 }
 
 .opcoes_container {
@@ -214,6 +258,7 @@ main {
     border: none;
     border-radius: 10px;
     color: #051D3B;
+    cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     height: 56px;
@@ -221,3 +266,14 @@ main {
     margin-top: 20px;
     width: 272px;
 }
+
+.botao_salvar_projeto:hover {
+    background: #051D3B;
+    border: 1px solid #5081FB;
+    color: #5081FB;
+}
+
+.botao_salvar_projeto:active {
+    transform: scale(0.9);
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <title>Alura Dev</title>
 </head>
+
 <body>
     <header>
         <img src="assets/img/logo-plataforma.png" alt="Logo da Alura Dev" class="logo">
@@ -18,13 +20,34 @@
         <img src="assets/img/foto-perfil.png" alt=" " class="usuario">
     </header>
     <main>
-        <div class="menu_navegacao">
+        <div class="menu_navegacao_container">
             <ul class="menu_navegacao_lista">
                 <label class="menu_navegaco_titulo">Menu</label>
                 <li class="menu_navegacao_item menu_navegacao_item-editor menu_navegacao_ativo">Editor de Código</li>
                 <li class="menu_navegacao_item menu_navegacao_item-comunidade">Comunidade</li>
             </ul>
         </div>
+        <div class="centro">
+            <div class="editor_container">
+                <textarea name="editor" id="editor" class="editor_input" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}"></textarea>
+            </div>
+            <input type="submit" value="Visualizar com o highlight" class="botao_highlight">
+        </div>
+        <div class="opcoes_container">
+            <input type="text" placeholder="Nome do seu projeto" />
+            <textarea name="descricao" placeholder="Descrição do seu projeto"></textarea>
+        </div>
     </main>
 </body>
+
 </html>

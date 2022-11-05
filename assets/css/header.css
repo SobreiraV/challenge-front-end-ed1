@@ -19,18 +19,22 @@ header {
 }
 
 .barra_pesquisar {
-    border-radius: 10px;
-    border: none;
     background: rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 10px;
     color: white;
-    width: 752px;
     padding-left: 20px;
-    margin-left: 0;
-    margin-right: 7.4vw;
+    width: 752px;
 }
 
 .barra_pesquisar::placeholder {
     color: white;
+}
+
+.usuario_container {
+    height: 56px;
+    text-align: end;
+    width: 210px;
 }
 
 .usuario {
@@ -42,11 +46,12 @@ main {
     justify-content: space-between;
 }
 
-.menu_navegacao_lista {
+.menu_navegacao_lista, .menu_navegacao_lista a {
     color: white;
     display: flex;
     flex-direction: column;
     list-style: none;
+    text-decoration: none;
     vertical-align: middle;
 }
 
@@ -74,39 +79,64 @@ main {
 
 .menu_navegacao_item-editor::before,
 .menu_navegacao_item-comunidade::before {
-    background-size: 48px 48px;
     background-repeat: no-repeat;
+    background-size: 48px 48px;
     content: "";
     display: inline-block;
     height: 48px;
-    width: 48px;
     margin-right: 15px;
+    width: 48px;
 }
 
-.menu_navegacao_item-editor::before {
+.menu_navegacao_item-editor-ativo::before {
     background-image: url(../img/icon-editor.png);
 }
 
-.menu_navegacao_item-comunidade::before {
+.menu_navegacao_item-editor-off::before {
+    background-image: url(../img/icon-editor-off.png);
+}
+
+.menu_navegacao_item-comunidade-ativo::before {
     background-image: url(../img/icon-comunidade.png);
+}
+
+.menu_navegacao_item-comunidade-off::before {
+    background-image: url(../img/icon-comunidade-off.png);
+}
+
+.menu_navegacao_item-editor-ativo:hover,
+.menu_navegacao_item-comunidade-ativo:hover {
+    text-decoration: underline;
+}
+
+.menu_navegacao_item-editor-off:hover {
+    background-image: url(../img/icon-editor.png);
+    background-repeat: no-repeat;
+    text-decoration: underline;
+}
+
+.menu_navegacao_item-comunidade-off:hover {
+    background-image: url(../img/icon-comunidade.png);
+    background-repeat: no-repeat;
+    text-decoration: underline;
 }
 
 .editor_container {
     background: #6BD1FF;
-    padding: 32px;
     border-radius: 10px;
+    padding: 32px;
 }
 
 .editor_input {
-    display: inline-block;
-    width: calc(688px - 30px);
-    height: calc(302px - 65px);
-    border-radius: 10px;
     background-image: url(../img/fundo-editor.png);
-    background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    display: inline-block;
     color: white;
+    height: calc(302px - 65px);
     padding: 50px 15px 15px 15px;
+    width: calc(688px - 30px);
 }
 
 .editor_input::placeholder {
@@ -117,13 +147,13 @@ main {
 }
 
 .botao_highlight {
-    width: 100%;
-    height: 56px;
-    border-radius: 10px;
-    border: none;
     background: rgba(80, 129, 251, 0.08);
+    border: none;
+    border-radius: 10px;
     color: white;
+    height: 56px;
     margin-top: 30px;
+    width: 100%;
 }
 
 .opcoes_container {
@@ -132,16 +162,16 @@ main {
 }
 
 .opcoes_campo {
-    border-radius: 10px;
-    border: none;
     background: rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 10px;
     color: white;
-    width: calc(272px - 20px);
-    height: 56px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    padding-left: 20px;
     font-size: 16px;
+    height: 56px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding-left: 20px;
+    width: calc(272px - 20px);
 }
 
 .opcoes_campo-linguagem {
@@ -163,31 +193,31 @@ main {
 .opcoes_campo::placeholder {
     color: white;
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
+    line-height: 24px;
 }
 
 .opcoes_campo-cor {
-    border-radius: 10px;
-    border: 1px solid white;
     background: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 10px;
     color: white;
-    width: 272px;
-    height: 56px;
-    margin-right: 20px;
-    margin-bottom: 15px;
     font-size: 16px;
+    height: 56px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    width: 272px;
 }
 
 .botao_salvar_projeto {
-    width: 272px;
-    height: 56px;
-    border-radius: 10px;
-    border: none;
     background: #5081FB;
+    border: none;
+    border-radius: 10px;
     color: #051D3B;
-    margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
+    height: 56px;
     line-height: 24px;
+    margin-top: 20px;
+    width: 272px;
 }

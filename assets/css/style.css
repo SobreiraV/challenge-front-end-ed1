@@ -174,12 +174,12 @@ main {
     width: calc(688px - 30px);
 } */
 
-.editor_input::placeholder {
+/* .editor_input::placeholder {
     color: white;
     font-weight: 400;
     font-size: 14px;
     line-height: 18.46px;
-}
+} */
 
 .botao_highlight {
     background: rgba(80, 129, 251, 0.08);

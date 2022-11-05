@@ -1,0 +1,79 @@
+body {
+    background-color: #051D3B;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 145px;
+}
+
+.barra_pesquisar {
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    width: 752px;
+}
+
+.barra_pesquisar::placeholder {
+    color: white;
+    padding-left: 20px;
+}
+
+.usuario {
+    height: 56px;
+}
+
+.menu_navegacao_lista {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.menu_navegaco_titulo {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.menu_navegacao_item-editor, 
+.menu_navegacao_item-comunidade {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.menu_navegacao_item-editor::before,
+.menu_navegacao_item-comunidade::before {
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    margin-right: 15px;
+}
+
+.menu_navegacao_item-editor::before {
+    background-image: url(../img/icon-editor.png);
+}
+
+.menu_navegacao_item-comunidade::before {
+    background-image: url(../img/icon-comunidade.png);
+}

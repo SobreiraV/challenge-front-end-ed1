@@ -6,8 +6,8 @@ form.addEventListener("submit", function (evento) {
 
     const nome = evento.target.elements['opcao_campo-nome'].value
     const descricao = evento.target.elements['opcao_campo-descricao'].value
-    const cor = evento.target.elements['linguagem'].value
-    const linguagem = evento.target.elements['opcoes_campo-cor'].value
+    const cor = evento.target.elements['opcoes_campo-cor'].value
+    const linguagem = evento.target.elements['linguagem'].value
 
     const existe = itens.find(elemento => elemento.nome === nome)
 

@@ -8,6 +8,10 @@ for (let i = 0; i < itens.length; i++) {
     card.classList.add("card")
     card.innerHTML = `
         <div class="card-body">
+            <div class="card-editor_fundo" style="background-color: ${item.cor}">
+                <div class="editor-botoes"></div>
+                <div class="card-editor"></div>
+            </div>
             <h5 class="card-nome">${item.nome}</h5>
             <p class="card-descricao">${item.descricao}</p>
             <div class="card-rodape">
@@ -15,7 +19,7 @@ for (let i = 0; i < itens.length; i++) {
                     <button class="card-comentarios botaosocial">9</button>
                     <button class="card-likes botaosocial">9</button>
                 </div>
-                <img src="#" class="card-autor"/>
+                <img src="/assets/img/autor-mini.png" class="card-autor">
             </div>
         </div>
     `

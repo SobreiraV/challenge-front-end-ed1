@@ -2,36 +2,86 @@ main {
     justify-content: flex-start;
 }
 
+.cards_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .card {
     background-color: rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 20px;
     margin-right: 20px;
-    width: 35vw;
+    width: 500px;
+}
+
+.card-editor_fundo {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    padding: 25px;
+    width: 450px;
+}
+
+.editor-botoes {
+    background: black;
+    background-image: url(../img/botoes-mac.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    height: 20px;
+    width: 100%;
+}
+
+.card-editor {
+    background: black;
+    border-radius: 0px 0px 10px 10px;
+    flex: 1 1 0px;
+    height: 100%;
+    white-space: pre-wrap;
+    width: 100%;
 }
 
 .card-nome {
     margin-left: 20px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 21px;
 }
 
 .card-descricao {
-    margin-left: 20px;
+    margin: 0 0 15px 20px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card-rodape {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .botaosocial {
     background: none;
     border: none;
     color: white;
+}
+
+.botaosocial:first-child {
     margin-left: 20px;
-    margin-right: 20px;
 }
 
 .card-comentarios::before {
-    background-image: url(../img/comunidade/comentarios.png);
+    background-image: url(../img/icon-comentario.png);
     background-size: 20px;
     background-repeat: no-repeat;
     content: "";
@@ -39,4 +89,21 @@ main {
     height: 20px;
     margin-right: 10px;
     width: 20px;
+}
+
+.card-likes::before {
+    background-image: url(../img/icon-coracao.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.card-autor {
+    width: 105px;
+    height: 40px;
+    margin-right: 20px;
 }

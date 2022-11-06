@@ -1,4 +1,4 @@
-main {
+.main {
     justify-content: flex-start;
 }
 
@@ -118,4 +118,19 @@ main {
     height: 40px;
     margin-right: 20px;
     width: 105px;
+}
+
+.botao_apagar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.botao_apagar {
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #051D3B;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 300;
 }

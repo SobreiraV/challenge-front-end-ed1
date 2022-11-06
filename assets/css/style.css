@@ -41,7 +41,7 @@ header {
     height: 56px;
 }
 
-main {
+.main {
     display: flex;
     justify-content: space-between;
 }

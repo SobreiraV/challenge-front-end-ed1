@@ -20,7 +20,7 @@ for (let i = 0; i < itens.length; i++) {
                     <button class="card-comentarios botaosocial">9</button>
                     <button class="card-likes botaosocial">9</button>
                 </div>
-                <img src="/assets/img/autor-mini.png" class="card-autor">
+                <img src="assets/img/autor-mini.png" class="card-autor">
             </div>
         </div>
     `

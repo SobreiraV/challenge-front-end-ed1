@@ -48,26 +48,38 @@ main {
     width: 100%;
 }
 
+.codigo_texto{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
 .card-nome {
-    margin-left: 20px;
-    margin-bottom: 0;
     color: white;
     font-size: 21px;
+    margin-bottom: 0;
+    margin-left: 20px;
 }
 
 .card-descricao {
-    margin: 0 0 15px 20px;
     color: white;
     font-size: 16px;
+    margin: 0 0 15px 20px;
     margin-top: 10px;
 }
 
 .card-rodape {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     height: 40px;
-    align-items: center;
     margin-bottom: 15px;
+}
+
+.card-social {
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
 }
 
 .botaosocial {
@@ -86,7 +98,7 @@ main {
     background-repeat: no-repeat;
     content: "";
     display: inline-block;
-    height: 20px;
+    height: 17.5px;
     margin-right: 10px;
     width: 20px;
 }
@@ -97,13 +109,13 @@ main {
     background-repeat: no-repeat;
     content: "";
     display: inline-block;
-    height: 20px;
+    height: 17.5px;
     margin-right: 10px;
     width: 20px;
 }
 
 .card-autor {
-    width: 105px;
     height: 40px;
     margin-right: 20px;
+    width: 105px;
 }

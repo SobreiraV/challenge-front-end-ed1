@@ -10,6 +10,7 @@ for (let i = 0; i < itens.length; i++) {
         <div class="card-body">
             <div class="card-editor_fundo" style="background-color: ${item.cor}">
                 <div class="editor-botoes"></div>
+                <code class="codigo_texto">${item.codigo}</code>
                 <div class="card-editor"></div>
             </div>
             <h5 class="card-nome">${item.nome}</h5>

@@ -1,0 +1,42 @@
+main {
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 35vw;
+}
+
+.card-nome {
+    margin-left: 20px;
+}
+
+.card-descricao {
+    margin-left: 20px;
+}
+
+.botaosocial {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-comentarios::before {
+    background-image: url(../img/comunidade/comentarios.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+}

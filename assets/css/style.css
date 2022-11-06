@@ -53,6 +53,7 @@ main {
     list-style: none;
     text-decoration: none;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 /* Se aplica também ao botões do formúlario de salvamento de projeto*/

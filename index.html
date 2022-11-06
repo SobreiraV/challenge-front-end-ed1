@@ -59,10 +59,10 @@ const unfold = (f, seed) => {
             <button class="botao_highlight botao">Visualizar com o highlight</button>
         </div>
 
-        <form class="opcoes_container">
+        <form class="opcoes_container" id="form_salvar">
             <label class="opcoes_titulo">Seu projeto</label>
-            <input type="text" placeholder="Nome do seu projeto" required class="opcoes_campo" id="opcao_campo-nome"/>
-            <textarea name="descricao" placeholder="Descrição do seu projeto" class="opcoes_campo opcoes_campo-descricao" id="opcao_campo-descricao"></textarea>
+            <input type="text" placeholder="Nome do seu projeto" autocomplete="off" class="opcoes_campo" id="opcao_campo-nome" required/>
+            <textarea name="descricao" placeholder="Descrição do seu projeto" autocomplete="off" class="opcoes_campo opcoes_campo-descricao" id="opcao_campo-descricao" required></textarea>
 
             <label class="opcoes_titulo opcoes_titulo-personalizacao">Personalização</label>
             <select name="linguagem" class="opcoes_campo opcoes_campo-linguagem linguagem" id="linguagem" required>
@@ -80,13 +80,14 @@ const unfold = (f, seed) => {
                     <option value="C#">C#</option>
                 </datalist> -->
             </select>
-            <input type="color" name="cor_editor" required class="opcoes_campo-cor" id="opcoes_campo-cor" value="#6BD1FF">
-            <input type="submit" value="Salvar projeto" id="botao_salvar_projeto" class="botao_salvar_projeto">
+            <input type="color" name="cor_editor" value="#6BD1FF" class="opcoes_campo-cor" id="opcoes_campo-cor" required>
+            <input type="submit" value="Salvar projeto" class="botao_salvar_projeto" id="botao_salvar_projeto">
         </form>
     </main>
     <script src="assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script src="assets/js/hl.js"></script>
+    <script src="assets/js/salvar.js"></script>
 </body>
 
 </html>
